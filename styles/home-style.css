@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    height: 5%;
+    overflow: visible;
+}
+
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 250px 300px 200px;
+    margin-left: 120px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+    gap: 20px;
+}
+
+.container, .content-area {
+    overflow: visible;
+}
+
+.title-container {
+    grid-column: span 2;
+}
+
+.title-container h1{
+    font-size: 3vw;
+}
+
+.title-container h2{
+    font-size: 1.5vw;
+}
+
+.image {
+    grid-area: 1/3/2/4;
+}
+
+.image a {
+    text-align: center;
+    font-weight: lighter;
+    font-size: small;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #E07A5F;
+    padding: 30px;
+    border-radius: 15px;
+    grid-column: span 3;
+    grid-row: span 1;
+    color: white;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-bottom: 20px;
+}
+
+.card h1 {
+    font-size: px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align-last: center;
+    margin-top: 15px;
+    min-width: auto;
+    min-height: auto
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #E07A5F;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.btn:hover {
+    background-color: #E07A5F80;
+}
+.btn:active {
+    background-color: #bc411f;
+}
+
+.image-container {
+    position: relative;
+    grid-column: span 3;
+    grid-row: span 2;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.image-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: light;
+    background: rgba(30, 30, 30, 0.314);
+    border-radius: 20px;
+    padding: 20px 40px; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60%;
+    min-height: 80px;
+}

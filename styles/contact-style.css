@@ -1,0 +1,61 @@
+.content-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.title-container {
+    grid-column: span 2;
+}
+
+.title-container h1{
+    font-size: 3vw;
+}
+
+.title-container h2{
+    font-size: 1.5vw;
+}
+
+.title-container hr {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.subheading-2{
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+.title-container ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.title-container a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #E07A5F;;
+}
+
+.title-container li{
+    font-size: 1.2vw;
+}
+
+.title-container ul {
+    gap: 10px;
+    list-style-type: none;
+}
+
+.title-container li {
+    margin: 0;
+    padding: 3px 0; /* Reduces spacing between list items */
+    line-height: 1.2; /* Adjusts text spacing */
+}

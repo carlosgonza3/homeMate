@@ -1,0 +1,128 @@
+.content-area{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 130px 1fr;
+    gap:30px;
+}
+
+.title-container{
+    grid-column: span 3;
+}
+
+.title-container h1{
+    font-size: 3vw;
+}
+
+.title-container h2{
+    font-size: 1.5vw;
+}
+
+.title-container hr {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.title-container h3{
+    font-size: 1.2vw;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.title-container p{
+    font-size: 1vw;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+
+@media (max-width: 1200px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+.cards-container a{
+    font-size: small;
+    text-decoration: none;
+    color: gray;
+}
+
+.card {
+    color: white;
+    margin: 40px 60px 40px 60px;
+    min-height: 100px;
+    width: auto;
+    max-height: 100px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #E07A5F;
+    transition: max-height 0.9s ease-in-out, margin 0.5s ease-in-out;
+    overflow: hidden;
+}
+.card h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3vw;
+    font-weight: normal;
+}
+.card ul{
+    margin: 0px;
+    display: none;
+}
+.card p{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9vw;
+    margin: 20px;;
+    padding: 20px;
+    font-weight: normal;
+    display: none;
+    background-color: #F1F1F1;
+    color: black;
+    border-radius: 20px;
+    font-size: 1.0vw;
+}
+
+.card:hover {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 50px 30px 50px;
+    max-height: 420px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover p{
+    display: block;
+}
+.card:hover ul{
+    list-style-type:disc;
+    margin-top: 0px;
+    display: block;
+}
+.card:hover li {
+    font-size: 0.8vw;
+    margin: 0px 30px 0px 30px;
+}
+
+.card::after {
+    max-height: 100px;
+}

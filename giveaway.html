@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="e">
+    <head>
+        <meta charset="utf-8">
+        <title>Giveaway a Pet </title>
+        <link rel="stylesheet" href="styles/sidebar-style.css">
+        <link rel="stylesheet" href="styles/header-style.css">
+        <link rel="stylesheet" href="styles/global-style.css">
+        <link rel="stylesheet" href="styles/giveaway-style.css">
+        <link rel="stylesheet" href="styles/footer-style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"> <!--Header Container-->
+                <a href="home.html"><img src="Assets/logo.png"></a>
+                <p>HomeMate</p>
+            </div>
+            <div class="side-bar">
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            <img src="Assets/house-white.png"> <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="browse.html">
+                            <img src="Assets/globe-white.png"> <p>Browse Pets</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="find.html">
+                        <img src="Assets/search-white.png"> <p>Find a Pet</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dogcare.html">
+                            <img src="Assets/dog-white.png"> <p>Dog Care</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="catcare.html">
+                            <img src="Assets/cat-white.png"> <p>Cat Care</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="giveaway.html">
+                            <img src="Assets/heart-up-white.png"> <p>Give Away Pet</p>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="contact.html">
+                            <img src="Assets/phone-white.png"> <p>Conntact Us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-area">
+                <div class="title-container">
+                    <h1 class="title">Find Your Perfect Pet Companion</h1>
+                    <h2 class="subheading">Tell Us About Your Ideal Pet & We’ll Help You Find a Match!</h2>
+                    <hr>
+                </div>
+                <div class="title-container">
+                    <br>
+                    <h2 class="subheading">1 - Pet Information 🐾</h2>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <div class="form-group">
+                            <label for="animal-type">What kind of furry friend are you looking to find a new home for?</label>
+                            <select class="dropdown-menu" name="animal-type" id="animal-type" required>
+                                <option value="" selected>-- Select an option --</option>
+                                <option value="dog">🐶 Dog</option>
+                                <option value="cat">🐱 Cat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="animal-type">Is your pet a specific breed, or are they a lovable mix?</label>
+                            <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
+                                <option value="" selected>-- Select a breed --</option>
+                                <option value="mixed"> Mixed Breed </option>
+                                <optgroup label="🐶 Dog Breeds">
+                                    <option value="labrador">Labrador Retriever</option>
+                                    <option value="german-shepherd">German Shepherd</option>
+                                    <option value="golden-retriever">Golden Retriever</option>
+                                    <option value="bulldog">Bulldog</option>
+                                    <option value="beagle">Beagle</option>
+                                    <option value="poodle">Poodle</option>
+                                    <option value="rottweiler">Rottweiler</option>
+                                    <option value="siberian-husky">Siberian Husky</option>
+                                    <option value="dachshund">Dachshund</option>
+                                    <option value="shih-tzu">Shih Tzu</option>
+                                    <option value="great-dane">Great Dane</option>
+                                    <option value="border-collie">Border Collie</option>
+                                    <option value="chihuahua">Chihuahua</option>
+                                    <option value="pomeranian">Pomeranian</option>
+                                    <option value="corgi">Corgi</option>
+                                    <option value="doberman">Doberman Pinscher</option>
+                                    <option value="maltese">Maltese</option>
+                                    <option value="boston-terrier">Boston Terrier</option>
+                                    <option value="saint-bernard">Saint Bernard</option>
+                                    <option value="other">Other</option>
+                                </optgroup>
+                                <!-- Cat Breeds -->
+                                <optgroup label="🐱 Cat Breeds">
+                                    <option value="persian">Persian</option>
+                                    <option value="maine-coon">Maine Coon</option>
+                                    <option value="siamese">Siamese</option>
+                                    <option value="ragdoll">Ragdoll</option>
+                                    <option value="british-shorthair">British Shorthair</option>
+                                    <option value="bengal">Bengal</option>
+                                    <option value="sphynx">Sphynx</option>
+                                    <option value="scottish-fold">Scottish Fold</option>
+                                    <option value="russian-blue">Russian Blue</option>
+                                    <option value="norwegian-forest">Norwegian Forest</option>
+                                    <option value="burmese">Burmese</option>
+                                    <option value="abyssinian">Abyssinian</option>
+                                    <option value="savannah">Savannah</option>
+                                    <option value="oriental-shorthair">Oriental Shorthair</option>
+                                    <option value="himalayan">Himalayan</option>
+                                    <option value="devon-rex">Devon Rex</option>
+                                    <option value="tonkinese">Tonkinese</option>
+                                    <option value="other">Other</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="animal-age">How old is your pet? Every age is perfect for the right family!</label>
+                            <select name="animal-age" id="animal-age" class="dropdown-menu" required>
+                                <option value="" selected>-- Select age range --</option>
+                                <option value="newborn">Puppy/Kitten (0-1 years)</option>
+                                <option value="young">Young (1-3 years)</option>
+                                <option value="adult">Adult (3-7 years)</option>
+                                <option value="senior">Senior (7+ years)</option>
+                                <option value=""> Doesn’t matter – Love has no age! </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="animal-gender">Is your pet a handsome boy or a lovely girl?</label>
+                            <select name="animal-gender" id="animal-gender" class="dropdown-menu" required>
+                                <option value="" selected>-- Select a gender --</option>
+                                <option value="female"> Female</option>
+                                <option value="female"> Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>How does your pet feel about making new furry friends?</label>
+                        
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="compatibility-dogs" name="[]compatibility" value="dogs">
+                                <label for="compatibility-dogs">Gets along with other dogs 🐶</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="compatibility-cats" name="[]compatibility" value="cats">
+                                <label for="compatibility-cats">Gets along with other cats 🐱</label>
+                            </div>
+                            <hr style="width: 30vmin">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="compatibility-unsure" name="[]compatibility" value="unsure">
+                                <label for="compatibility-unsure">Not sure</label>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="compatibility-children">Would your pet enjoy a home with small children?</label>
+                            <select name="compatibility-children" id="compatibility-children" class="dropdown-menu" required>
+                                <option value="" selected>-- Select an option --</option>
+                                <option value="yes">  Yes, they love kids!</option>
+                                <option value="no"> They prefer a quieter home</option>
+                                <option value="unsure">Not sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Brag about your pet! Tell us why they’re amazing and what makes them special.</label>
+                            <textarea id="comments" name="comments" rows="3" placeholder="Tip, describe their pet’s personality, quirks, and favorite things"></textarea>
+                        </div>
+                        <div class="title-container">
+                            <br>
+                            <h2 class="subheading">2 - Owner Information 🏡</h2>
+                        </div>
+                        <div class="form-group">
+                            <label>Who should potential adopters contact?</label>
+                            <table class="text-inputs" style="margin-top: 15px;">
+                                <tr>
+                                    <td>
+                                        <label for="owner-first-name">First Name:</label>
+                                    </td>
+                                    <td>
+                                        <input id="owner-first-name" name="owner-first-name" type="text" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="owner-last-name">Last Name: </label>
+                                    </td>
+                                    <td>
+                                        <input id="owner-last-name" name="owner-last-name" type="text" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="owner-email">Email Address: </label>
+                                    </td>
+                                    <td>
+                                        <input id="owner-email" name="owner-email" type="email" required>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="form-group">
+                            <button id="submit" type="submit">Find My Pet a Loving Home!</button>
+                            <button id="reset" type="reset">Reset Form – Start Over</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; 2025 HomeMate. All Rights Reserved.</p>
+                <p>
+                    We respect your privacy. Your information will never be sold or misused. 
+                    <br>HomeMate is not responsible for any incorrect information posted by pet owners.
+                </p>
+                <p>
+                    <a href="privacy.html">Privacy & Disclaimer Policy</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
