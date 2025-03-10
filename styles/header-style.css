@@ -1,31 +1,37 @@
 
 .header{
     display: flex;
-    background-color: #011936;
     align-items: center;
     justify-content: center;
-    height: 5%;
-}
-
-.header {
-    display: flex;
-    padding: 10px 20px;
+    background-color: #011936;
+    padding: 20px;
     width: 100%;
+    height: auto;
 }
 
-.header img p a {
-    margin-left: 40px;
-}
 .header img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: auto;
 }
+
 .header p {
     margin: 10px;
-    font-size: 30pt;
+    font-size: 30px;
     color: #FFFCF2;
-}
-.header {
     font-weight: lighter;
-    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header img {
+        width: 40px; /* Slightly smaller logo */
+    }
+
+    .header p {
+        font-size: 20px; /* Reduce font size on smaller screens */
+    }
 }
