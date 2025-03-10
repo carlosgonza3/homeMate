@@ -141,16 +141,8 @@ select.dropdown-menu {
 
 
 @media (max-width: 900px) {
-    .content-area {
-        margin-left: 0 !important; /* Prevent shifting */
-    }
-    
-    .title-container h1 {
-        font-size: 35px;
-    }
-
-    .title-container h2 {
-        font-size: 20px;
+    .form-group table {
+        width: 150%;
     }
 }
 

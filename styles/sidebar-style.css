@@ -26,6 +26,7 @@ ul li{
     transition: background 0.3s;
 }
 
+
 ul li a {
     display: flex;
     align-items: center;
@@ -36,6 +37,7 @@ ul li a {
 ul li img {
     width: 30px;
     transition: margin 0.3s;
+    align-items: center;
 }
 
 ul li p {

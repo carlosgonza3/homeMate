@@ -135,31 +135,15 @@
 
 @media (max-width: 900px) {
     .content-area {
-        grid-template-columns: 1fr; /* Single column layout on mobile */
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         padding: 10px;
-        margin-left: 0 !important; /* Prevent shifting */
-
-    }
-
-    .side-bar:hover ~ .content-area {
-        margin-left: 0 !important; /* Ensure no shift happens on mobile */
+        gap: 20px;
     }
 
     .title-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .title-container h1 {
-        font-size: 5vw; /* Scales based on screen size */
-        text-align: center;
-    }
-
-    .title-container h2 {
-        font-size: 3vw;
-        text-align: center;
     }
 
     .btn {

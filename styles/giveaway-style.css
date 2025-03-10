@@ -16,14 +16,6 @@
     grid-column: span 2;
 }
 
-.title-container h1{
-    font-size: 3vw;
-}
-
-.title-container h2{
-    font-size: 1.5vw;
-}
-
 .title-container hr {
     margin-top: 20px;
     width: 80%;
@@ -172,18 +164,4 @@ textarea::placeholder {
 
 #reset:active {
     background-color: #031f40;
-}
-
-@media (max-width: 900px) {
-    .content-area {
-        margin-left: 0 !important; /* Prevent shifting */
-    }
-    
-    .title-container h1 {
-        font-size: 35px;
-    }
-
-    .title-container h2 {
-        font-size: 20px;
-    }
 }
