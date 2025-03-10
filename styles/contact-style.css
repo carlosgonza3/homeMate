@@ -11,12 +11,12 @@
     grid-column: span 2;
 }
 
-.title-container h1{
-    font-size: 3vw;
-}
 
-.title-container h2{
-    font-size: 1.5vw;
+.title-container h1 {
+    margin-right: 40px;
+}
+.title-container h2 {
+    margin-right: 40px;
 }
 
 .title-container hr {
@@ -29,8 +29,6 @@
     margin-top: 30px;
     margin-bottom: 15px;
 }
-
-
 
 .title-container ul {
     display: flex;
@@ -46,7 +44,7 @@
 }
 
 .title-container li{
-    font-size: 1.2vw;
+    font-size: 18px;
 }
 
 .title-container ul {

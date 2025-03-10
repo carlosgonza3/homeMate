@@ -1,6 +1,6 @@
 .content-area{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 3fr 1fr; 
     grid-template-rows: auto auto;
     gap: 20px;
 }
@@ -13,6 +13,10 @@
     display: block;
     flex-direction:column;
     align-items: left;
+}
+
+.form-group table {
+    width: 100%;
 }
 
 .form-group input {
@@ -136,6 +140,10 @@ select.dropdown-menu {
 }
 
 
-
+@media (max-width: 900px) {
+    .form-group table {
+        width: 150%;
+    }
+}
 
 

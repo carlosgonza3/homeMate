@@ -1,6 +1,6 @@
 .content-area{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 3fr 1fr; 
     grid-template-rows: auto auto;
     gap: 20px; 
 }
@@ -16,14 +16,6 @@
     grid-column: span 2;
 }
 
-.title-container h1{
-    font-size: 3vw;
-}
-
-.title-container h2{
-    font-size: 1.5vw;
-}
-
 .title-container hr {
     margin-top: 20px;
     width: 80%;
@@ -37,6 +29,10 @@
     display: block;
     flex-direction:column;
     align-items: left;
+}
+
+.form-group table {
+    width: 100%;
 }
 
 .form-group input {

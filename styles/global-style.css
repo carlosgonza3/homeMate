@@ -1,3 +1,4 @@
+/* Global Default Styles */
 *{
     margin: 0;
     padding: 0;
@@ -7,21 +8,59 @@
 body{
     background-color: #FFFCF2 ;
 }
+
+/* Content Area Global styles*/
 .content-area {
     margin-left: 120px;
     padding: 20px;
     transition: margin-left 0.5s ease;
 }
+
+/* Content area pushed to the right by sidebar hovering */
 .side-bar:hover + .content-area{
     margin-left: 270px;
 }
-.title {
-    font-size: 60px;
+
+/* Title Container Styles */
+.title-container h1 {
+    font-size: 50px;
     font-weight: 300;
     margin-top: 30px;
 }
-
-.subheading {
+.title-container h2 {
+    font-size: 25px;
     margin-top: 10px;
     font-weight: lighter;
+}
+.title-container h3{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.title-container p{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/* Small devices Global styles */
+@media (max-width: 900px) {
+    .content-area {
+        margin-left: 0 !important; /* Prevent shifting */
+    }
+    
+    .title-container h1 {
+        font-size: 34px;
+    }
+
+    .title-container h2 {
+        font-size: 20px;
+    }
+    .form-group label{
+        font-size: 18px;
+    }
 }
