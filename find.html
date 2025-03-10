@@ -19,38 +19,38 @@
             <div class="side-bar">
                 <ul>
                     <li>
-                        <a href="home.html">
+                        <a href="home.html" title="Home">
                             <img src="Assets/house-white.png"> <p>Home</p>
                         </a>
                     </li>
                     <li>
-                        <a href="browse.html">
+                        <a href="browse.html" title="Browse Pets">
                             <img src="Assets/globe-white.png"> <p>Browse Pets</p>
                         </a>
                     </li>
-                    <li  class="active">
-                        <a href="find.html">
+                    <li class="active">
+                        <a href="find.html" title="Find a Pet">
                         <img src="Assets/search-white.png"> <p>Find a Pet</p>
                         </a>
                     </li>
                     <li>
-                        <a href="dogcare.html">
+                        <a href="dogcare.html" title="Dog Care">
                             <img src="Assets/dog-white.png"> <p>Dog Care</p>
                         </a>
                     </li>
                     <li>
-                        <a href="catcare.html">
+                        <a href="catcare.html" title="Cat Care">
                             <img src="Assets/cat-white.png"> <p>Cat Care</p>
                         </a>
                     </li>
                     <li>
-                        <a href="giveaway.html">
-                            <img src="Assets/heart-up-white.png"> <p>Give Away Pet</p>
+                        <a href="giveaway.html" title="Give Away a Pet">
+                            <img src="Assets/heart-up-white.png"> <p>Give Away</p>
                         </a>
                     </li>
                     <hr>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact.html" title="Contact">
                             <img src="Assets/phone-white.png"> <p>Conntact Us</p>
                         </a>
                     </li>
@@ -65,83 +65,116 @@
                 <div class="form-container">
                     <form action="">
                         <div class="form-group">
-                            <label for="animal-type">Are you looking for a loyal pup or a cuddly feline friend?</label>
-                            <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
-                                <option value="" selected>-- Select an option --</option>
-                                <option>🐶 Dog</option>
-                                <option>🐱 Cat</option>
-                                <option>Doesn’t matter – I just want a furry friend!</option>
-                            </select>
+                            <table>
+                                <tr>
+                                    <label for="animal-type">Are you looking for a loyal pup or a cuddly feline friend?</label>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
+                                            <option value="" selected>-- Select an option --</option>
+                                            <option>🐶 Dog</option>
+                                            <option>🐱 Cat</option>
+                                            <option>Doesn’t matter – I just want a furry friend!</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                         <div class="form-group">
-                            <label for="animal-breed">Do you have a specific breed in mind, or are you open to surprises?</label>
-                            <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
-                                <option value="" selected>-- Select a breed --</option>
-                                <optgroup label="🐶 Dog Breeds">
-                                    <option value="labrador">Labrador Retriever</option>
-                                    <option value="german-shepherd">German Shepherd</option>
-                                    <option value="golden-retriever">Golden Retriever</option>
-                                    <option value="bulldog">Bulldog</option>
-                                    <option value="beagle">Beagle</option>
-                                    <option value="poodle">Poodle</option>
-                                    <option value="rottweiler">Rottweiler</option>
-                                    <option value="siberian-husky">Siberian Husky</option>
-                                    <option value="dachshund">Dachshund</option>
-                                    <option value="shih-tzu">Shih Tzu</option>
-                                    <option value="great-dane">Great Dane</option>
-                                    <option value="border-collie">Border Collie</option>
-                                    <option value="chihuahua">Chihuahua</option>
-                                    <option value="pomeranian">Pomeranian</option>
-                                    <option value="corgi">Corgi</option>
-                                    <option value="doberman">Doberman Pinscher</option>
-                                    <option value="maltese">Maltese</option>
-                                    <option value="boston-terrier">Boston Terrier</option>
-                                    <option value="saint-bernard">Saint Bernard</option>
-                                    <option value="other">Other</option>
-                                </optgroup>
-                                <!-- Cat Breeds -->
-                                <optgroup label="🐱 Cat Breeds">
-                                    <option value="persian">Persian</option>
-                                    <option value="maine-coon">Maine Coon</option>
-                                    <option value="siamese">Siamese</option>
-                                    <option value="ragdoll">Ragdoll</option>
-                                    <option value="british-shorthair">British Shorthair</option>
-                                    <option value="bengal">Bengal</option>
-                                    <option value="sphynx">Sphynx</option>
-                                    <option value="scottish-fold">Scottish Fold</option>
-                                    <option value="russian-blue">Russian Blue</option>
-                                    <option value="norwegian-forest">Norwegian Forest</option>
-                                    <option value="burmese">Burmese</option>
-                                    <option value="abyssinian">Abyssinian</option>
-                                    <option value="savannah">Savannah</option>
-                                    <option value="oriental-shorthair">Oriental Shorthair</option>
-                                    <option value="himalayan">Himalayan</option>
-                                    <option value="devon-rex">Devon Rex</option>
-                                    <option value="tonkinese">Tonkinese</option>
-                                    <option value="other">Other</option>
-                                </optgroup>
-                                <option default> Doesn’t matter – I love them all! </option>
-                            </select>
+                            <table>
+                                <tr>
+                                    <label for="animal-breed">Do you have a specific breed in mind, or are you open to surprises?</label>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
+                                            <option value="" selected>-- Select a breed --</option>
+                                            <optgroup label="🐶 Dog Breeds">
+                                                <option value="labrador">Labrador Retriever</option>
+                                                <option value="german-shepherd">German Shepherd</option>
+                                                <option value="golden-retriever">Golden Retriever</option>
+                                                <option value="bulldog">Bulldog</option>
+                                                <option value="beagle">Beagle</option>
+                                                <option value="poodle">Poodle</option>
+                                                <option value="rottweiler">Rottweiler</option>
+                                                <option value="siberian-husky">Siberian Husky</option>
+                                                <option value="dachshund">Dachshund</option>
+                                                <option value="shih-tzu">Shih Tzu</option>
+                                                <option value="great-dane">Great Dane</option>
+                                                <option value="border-collie">Border Collie</option>
+                                                <option value="chihuahua">Chihuahua</option>
+                                                <option value="pomeranian">Pomeranian</option>
+                                                <option value="corgi">Corgi</option>
+                                                <option value="doberman">Doberman Pinscher</option>
+                                                <option value="maltese">Maltese</option>
+                                                <option value="boston-terrier">Boston Terrier</option>
+                                                <option value="saint-bernard">Saint Bernard</option>
+                                                <option value="other">Other</option>
+                                            </optgroup>
+                                            <!-- Cat Breeds -->
+                                            <optgroup label="🐱 Cat Breeds">
+                                                <option value="persian">Persian</option>
+                                                <option value="maine-coon">Maine Coon</option>
+                                                <option value="siamese">Siamese</option>
+                                                <option value="ragdoll">Ragdoll</option>
+                                                <option value="british-shorthair">British Shorthair</option>
+                                                <option value="bengal">Bengal</option>
+                                                <option value="sphynx">Sphynx</option>
+                                                <option value="scottish-fold">Scottish Fold</option>
+                                                <option value="russian-blue">Russian Blue</option>
+                                                <option value="norwegian-forest">Norwegian Forest</option>
+                                                <option value="burmese">Burmese</option>
+                                                <option value="abyssinian">Abyssinian</option>
+                                                <option value="savannah">Savannah</option>
+                                                <option value="oriental-shorthair">Oriental Shorthair</option>
+                                                <option value="himalayan">Himalayan</option>
+                                                <option value="devon-rex">Devon Rex</option>
+                                                <option value="tonkinese">Tonkinese</option>
+                                                <option value="other">Other</option>
+                                            </optgroup>
+                                            <option default> Doesn’t matter – I love them all! </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                         <div class="form-group">
-                            <label for="animal-age">What stage of life is your perfect companion in?</label>
-                            <select name="animal-age" id="animal-age" class="dropdown-menu" required>
-                                <option value="" selected>-- Select age range --</option>
-                                <option value="newborn">Puppy/Kitten (0-1 years)</option>
-                                <option value="young">Young (1-3 years)</option>
-                                <option value="adult">Adult (3-7 years)</option>
-                                <option value="senior">Senior (7+ years)</option>
-                                <option value=""> Doesn’t matter – Love has no age! </option>
-                            </select>
+                            <table>
+                                <tr>
+                                    <label for="animal-age">What stage of life is your perfect companion in?</label>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="animal-age" id="animal-age" class="dropdown-menu" required>
+                                            <option value="" selected>-- Select age range --</option>
+                                            <option value="newborn">Puppy/Kitten (0-1 years)</option>
+                                            <option value="young">Young (1-3 years)</option>
+                                            <option value="adult">Adult (3-7 years)</option>
+                                            <option value="senior">Senior (7+ years)</option>
+                                            <option value=""> Doesn’t matter – Love has no age! </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                           
                         </div>
                         <div class="form-group">
-                            <label for="animal-gender">Do you prefer a boy or a girl, or does it not matter?</label>
-                            <select name="animal-gender" id="animal-gender" class="dropdown-menu" required>
-                                <option value="" selected>-- Select a gender --</option>
-                                <option value="female"> Female</option>
-                                <option value="female"> Male</option>
-                                <option value=""> No preference – Love is unconditional! </option>
-                            </select>
+                            <table>
+                                <tr>
+                                    <label for="animal-gender">Do you prefer a boy or a girl, or does it not matter?</label>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="animal-gender" id="animal-gender" class="dropdown-menu" required>
+                                            <option value="" selected>-- Select a gender --</option>
+                                            <option value="female"> Female</option>
+                                            <option value="female"> Male</option>
+                                            <option value=""> No preference – Love is unconditional! </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                         <div class="form-group">
                             <label>Will your new pet need to befriend any of the following?</label>
