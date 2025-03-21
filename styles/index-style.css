@@ -5,10 +5,7 @@
     margin-left: 90px;
     padding: 20px;
     transition: margin-left 0.5s ease;
-}
-
-.container, .content-area {
-    overflow: visible;
+    max-width: 100vw;
 }
 
 .title-container {
@@ -131,7 +128,6 @@
         display: flex;
         justify-content: center;
         min-width: 30%;
-        margin-right: 50px;
     }
 }
 
