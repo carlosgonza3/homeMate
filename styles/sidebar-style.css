@@ -81,9 +81,9 @@ li.active:hover {
 }
 
 /* Mobile Small Screens */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .side-bar {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
         height: auto;
         position: relative;
         padding: 10px;
@@ -100,14 +100,13 @@ li.active:hover {
     }
 
     .side-bar ul li img {
-        width: 25px; /* Smaller icons */
+        width: 25px;
     }
 
     .side-bar ul li p {
-        display: none !important; /* Hide text on small screens */
+        display: none !important;
     }
 
-    /* Remove hover effect for mobile */
     .side-bar:hover {
         width: 100%;
     }

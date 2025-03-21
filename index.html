@@ -3,23 +3,32 @@
 <html lang="e">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home </title>
         <link rel="stylesheet" href="styles/sidebar-style.css">
         <link rel="stylesheet" href="styles/header-style.css">
-        <link rel="stylesheet" href="styles/home-style.css">
         <link rel="stylesheet" href="styles/global-style.css">
+        <link rel="stylesheet" href="styles/index-style.css">
         <link rel="stylesheet" href="styles/footer-style.css">
     </head>
     <body>
         <div class="container">
-            <div class="header"> 
-                <a href="home.html"><img src="Assets/logo.png"></a>
-                <p>HomeMate</p>
+            <div class="header">
+                <div>
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="Assets/logo.png"></a>
+                    <p>HomeMate</p>
+                </div>
+                <div class="date-time">
+                    <p id="date"> -- -- -- </p>
+                    <p id="time"> -- -- -- </p>
+                </div>
             </div>
             <div class="side-bar">
                 <ul>
                     <li class="active">
-                        <a href="home.html" title="Home">
+                        <a href="index.html" title="Home">
                             <img src="Assets/house-white.png"> <p>Home</p>
                         </a>
                     </li>
@@ -58,13 +67,13 @@
             </div>
             <div class="content-area">
                 <div class="title-container">
-                    <h1> Welcome to HomeMate! 🐾 </h1>
-                    <h2> Find Your Perfect Furry Friend! </h2>
+                    <h1 class="main-title"> Welcome to HomeMate! 🐾 </h1>
+                    <h2 class="main-subheading"> Find Your Perfect Furry Friend! </h2>
                     <a href="find.html" class="btn">Find Your Pet</a>
                     <a href="contact.html" class="btn">Contact Us!</a>
                 </div class="">
                 <div class="image">
-                    <img src="Assets/dog-cat.png" alt="Image of a cute dog">
+                    <img src="Assets/dog-cat.png" alt="Image of a dog with a cat smiling ">
                     <a class="image-footnote" href="https://www.istockphoto.com/photo/labrador-retriever-dog-panting-and-ginger-cat-sitting-in-front-of-dark-yellow-gm1435010849-476472165" target="_blank"> Picture by GlobalIP </a>
                 </div>
                 <div class="card">
@@ -91,6 +100,6 @@
                 </p>
             </div>
         </div>
-       
+        <script src="scripts/header.js"></script>
     </body>
 </html>

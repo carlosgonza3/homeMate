@@ -140,7 +140,7 @@ select.dropdown-menu {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .form-group table {
         width: 150%;
     }
