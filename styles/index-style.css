@@ -139,7 +139,6 @@
     .content-area {
         grid-template-columns: 1fr;
         padding: 10px;
-        gap: 20px;
     }
 
     .title-container {
