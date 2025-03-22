@@ -17,6 +17,7 @@ body{
     "side-bar content-area  content-area"
     "side-bar content-area  content-area"
     "footer footer foooter";
+
     height: 100%; /* Full screen height */
     grid-template-columns: 70px 1fr;
 }
@@ -27,6 +28,7 @@ body{
     margin-left: 120px;
     padding: 20px;
     transition: margin-left 0.5s ease;
+    height: 100%;
 }
 
 /* Content area pushed to the right by sidebar hovering */
