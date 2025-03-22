@@ -1,8 +1,7 @@
 .content-area {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto;
-    margin-left: 90px;
+    grid-template-rows: 1fr auto;
     padding: 20px;
     transition: margin-left 0.5s ease;
     max-width: 100vw;
@@ -14,6 +13,7 @@
 
 .title-container h1{
     font-size: 50px;
+    margin-right: 20px;
 }
 
 .title-container h2{
@@ -89,6 +89,7 @@
 }
 
 .image-container {
+    width: 100%;
     position: relative;
     grid-column: span 3;
     grid-row: span 2;
@@ -129,12 +130,20 @@
         justify-content: center;
         min-width: 30%;
     }
+    .content-area {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 1200px) {
-    .content-area {
+
+    .container {
         grid-template-columns: 1fr;
-        padding: 10px;
+    }
+
+    .content-area {
+        display: flex;
+        flex-direction: column;
     }
 
     .title-container {
@@ -149,7 +158,6 @@
 
     .main-subheading {
         margin-bottom: 20px;
-
     }
 
     .btn {
