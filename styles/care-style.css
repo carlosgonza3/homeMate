@@ -13,16 +13,22 @@
 
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: 2fr 2fr 20px 10px;
     height: 100vh;
 }
+
 
 
 @media (max-width: 1200px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        height: 100%;
+        grid-template-rows: repeat(3, 1fr) 200px;;
+        height: 90%;
+    }
+
+    .footer {
+        margin-top: 90px;
     }
 
     .card {
@@ -30,13 +36,22 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .cards-container {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     .card {
-        height: 450px;
+        height: 350px;
         margin: 10px;
+    }
+    .card:hover {
+        height: 450px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        margin: 30px 50px 30px 50px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     }
 }
 

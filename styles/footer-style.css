@@ -29,7 +29,6 @@
 
 @media (max-width: 1200px) {
     .footer {
-        margin-top: 100px;
         grid-area: footer;
         display: flex;
         flex-direction: column;
@@ -39,7 +38,6 @@
 
 @media (max-width: 800px) {
     .footer {
-        margin-top: 300px;
         grid-area: footer;
         display: flex;
         flex-direction: column;

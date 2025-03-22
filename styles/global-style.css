@@ -15,9 +15,7 @@ body{
     grid-template-areas:
     "header header header"
     "side-bar content-area  content-area"
-    "side-bar content-area  content-area"
     "footer footer foooter";
-
     height: 100%; /* Full screen height */
     grid-template-columns: 70px 1fr;
 }
@@ -25,7 +23,7 @@ body{
 /* Content Area Global styles*/
 .content-area {
     grid-area: content-area;
-    margin-left: 120px;
+    margin-left: 50px;
     padding: 20px;
     transition: margin-left 0.5s ease;
     height: 100%;
@@ -33,7 +31,8 @@ body{
 
 /* Content area pushed to the right by sidebar hovering */
 .side-bar:hover + .content-area{
-    margin-left: 270px;
+    transition: margin-left 0.5s ease;
+    margin-left: 200px;
 }
 
 /* Title Container Styles */
@@ -46,6 +45,7 @@ body{
     font-size: 25px;
     margin-top: 10px;
     font-weight: lighter;
+    padding-right: 40px;
 }
 .title-container h3{
     font-size: 25px;
@@ -63,7 +63,7 @@ body{
 }
 .title-container hr {
     margin-top: 20px;
-    width: 80%;
+    width: 90%;
 }
 
 /* Small devices Global styles */
@@ -79,15 +79,18 @@ body{
         grid-template-columns: 70px 1fr;
     }    
     .content-area {
-        margin-left: 0 !important; /* Prevent shifting */
+        margin-left: 0px !important;/* Prevent shifting */
     }
     
     .title-container h1 {
         font-size: 34px;
+        text-align: center;
     }
 
     .title-container h2 {
         font-size: 20px;
+        padding-right: 30px;
+        text-align: center;
     }
     .form-group label{
         font-size: 18px;
