@@ -1,7 +1,5 @@
 .content-area{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 130px 1fr;
-    gap:30px;
+    height: 100%;
 }
 
 .title-container{
@@ -17,6 +15,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
+    height: 100vh;
 }
 
 
@@ -43,9 +42,8 @@
 .card {
     color: white;
     margin: 40px 60px 40px 60px;
-    min-height: 100px;
-    width: auto;
-    max-height: 100px;    
+    max-width: 700ptx;
+    max-height: 250px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
