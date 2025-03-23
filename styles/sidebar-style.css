@@ -1,14 +1,15 @@
 /* Start of default values for Sidebar*/
 .side-bar {
+    grid-area: side-bar;
+    position: fixed;
     width: 70px;
     height: 100vh;
-    position: fixed;
     top: 0;
     left: 0;
     padding: 20px 10px;
     background-color: #0B2B53;
     transition: width 0.5s ease-in-out;
-    z-index: 100;
+    z-index: 300;
     overflow: hidden;
 }
 
@@ -41,7 +42,6 @@ ul li img {
 }
 
 ul li p {
-    position: absolute;
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
@@ -84,7 +84,7 @@ li.active:hover {
 @media (max-width: 1200px) {
     .side-bar {
         width: 100%;
-        height: auto;
+        height: 60px;
         position: relative;
         padding: 10px;
     }
