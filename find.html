@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Find a Pet </title>
+        <link rel="stylesheet" href="styles/global-style.css">
         <link rel="stylesheet" href="styles/sidebar-style.css">
         <link rel="stylesheet" href="styles/header-style.css">
-        <link rel="stylesheet" href="styles/global-style.css">
         <link rel="stylesheet" href="styles/find-style.css">
         <link rel="stylesheet" href="styles/footer-style.css">
     </head>
@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="browse.html" title="Browse Pets">
+                        <a href="pets.html" title="Browse Pets">
                             <img src="Assets/globe-white.png"> <p>Browse Pets</p>
                         </a>
                     </li>
@@ -72,20 +72,21 @@
                     <hr>
                 </div>
                 <div class="form-container">
-                    <form action="">
+                    <form class="find-form" action="/find.html" onsubmit="return validate()">
                         <div class="form-group">
                             <table>
                                 <tr>
-                                    <label for="animal-type">Are you looking for a loyal pup or a cuddly feline friend?</label>
+                                    <label for="animal-type">Are you looking for a loyal dog or a cuddly cat friend?</label>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
+                                        <select class="dropdown-menu" name="animal-type" id="animal-type"> 
                                             <option value="" selected>-- Select an option --</option>
                                             <option>🐶 Dog</option>
                                             <option>🐱 Cat</option>
                                             <option>Doesn’t matter – I just want a furry friend!</option>
                                         </select>
+                                        <p class="requiered" id="type-required"></p>
                                     </td>
                                 </tr>
                             </table>
@@ -97,7 +98,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select class="dropdown-menu" name="animal-type" id="animal-type" required> 
+                                        <select class="dropdown-menu" name="animal-breed" id="animal-breed"> 
                                             <option value="" selected>-- Select a breed --</option>
                                             <optgroup label="🐶 Dog Breeds">
                                                 <option value="labrador">Labrador Retriever</option>
@@ -144,6 +145,7 @@
                                             </optgroup>
                                             <option default> Doesn’t matter – I love them all! </option>
                                         </select>
+                                        <p class="requiered" id="breed-required"></p>
                                     </td>
                                 </tr>
                             </table>
@@ -155,18 +157,18 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select name="animal-age" id="animal-age" class="dropdown-menu" required>
+                                        <select name="animal-age" id="animal-age" class="dropdown-menu">
                                             <option value="" selected>-- Select age range --</option>
                                             <option value="newborn">Puppy/Kitten (0-1 years)</option>
                                             <option value="young">Young (1-3 years)</option>
                                             <option value="adult">Adult (3-7 years)</option>
                                             <option value="senior">Senior (7+ years)</option>
-                                            <option value=""> Doesn’t matter – Love has no age! </option>
+                                            <option value="none"> Doesn’t matter – Love has no age! </option>
                                         </select>
+                                        <p class="requiered" id="age-required"></p>
                                     </td>
                                 </tr>
-                            </table>
-                           
+                            </table>  
                         </div>
                         <div class="form-group">
                             <table>
@@ -175,12 +177,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select name="animal-gender" id="animal-gender" class="dropdown-menu" required>
+                                        <select name="animal-gender" id="animal-gender" class="dropdown-menu">
                                             <option value="" selected>-- Select a gender --</option>
                                             <option value="female"> Female</option>
                                             <option value="female"> Male</option>
-                                            <option value=""> No preference – Love is unconditional! </option>
+                                            <option value="none"> No preference – Love is unconditional! </option>
                                         </select>
+                                        <p class="requiered" id="gender-required"></p>
                                     </td>
                                 </tr>
                             </table>
@@ -202,15 +205,18 @@
                                 <input type="checkbox" id="compatibility-children" name="[]compatibility" value="children">
                                 <label for="compatibility-children">Small children</label>
                             </div>
+
+                            <hr style="width: 15%;">
                         
                             <div class="checkbox-group">
                                 <input type="checkbox" id="compatibility-none" name="[]compatibility" value="none">
                                 <label for="compatibility-none">Not a concern</label>
                             </div>
+                            <p class="requiered" id="compatibility-required"></p>
                         </div>
                         <div class="form-group">
                             <button id="submit" type="submit">Find My New Best Friend!</button>
-                            <button id="reset" type="reset">Start Over – Let’s Try Again</button>
+                            <button id="reset" type="reset" onclick="resetForm()">Start Over – Let’s Try Again</button>
                         </div>
                     </form>
                 </div>
@@ -227,5 +233,6 @@
             </div>
         </div>
         <script src="scripts/header.js"></script>
+        <script src="scripts/find.js"></script>
     </body>
 </html>

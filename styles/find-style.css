@@ -15,8 +15,14 @@
     align-items: left;
 }
 
-.form-group table {
-    width: 100%;
+.requiered {
+    height: 1rem;
+    color: rgb(218, 17, 17);
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 5px;
+    transform: translateX(20px);
+    font-style: italic;
 }
 
 .form-group input {
@@ -42,6 +48,10 @@
     font-size: 20px;
 }
 
+.form-group table {
+    width: 70%;
+}
+
 .form-input label{
     margin-bottom: 20px;
 }
@@ -57,7 +67,8 @@ select.dropdown-menu {
     border-radius:20px;
     font-size: 16px;
     color: white;
-    width: 60%;
+    width: 100%;
+    height: 60px;
 }
 
 .form-input  {
@@ -142,7 +153,13 @@ select.dropdown-menu {
 
 @media (max-width: 1200px) {
     .form-group table {
-        width: 150%;
+        width: 100%;
+    }
+
+    .content-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
