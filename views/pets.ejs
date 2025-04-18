@@ -21,11 +21,6 @@
                             <img src="/assets/house-white.png"> <p>Home</p>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="/pets" title="Browse Pets">
-                            <img src="/assets/globe-white.png"> <p>Browse Pets</p>
-                        </a>
-                    </li>
                     <li>
                         <a href="/find" title="Find a Pet">
                         <img src="/assets/search-white.png"> <p>Find a Pet</p>
@@ -68,5 +63,8 @@
         </div>
         <script src="/scripts/header.js"></script>
         <script src="/scripts/pets.js"></script>
+        <script>
+            const pets = <%- JSON.stringify(pets) %>;
+        </script>
     </body>
 </html>

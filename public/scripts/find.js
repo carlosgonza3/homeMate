@@ -5,6 +5,7 @@ let gender;
 let compatibilities;
 
 function validate() {
+
     readFormData();
 
     let emptyflag = false;
@@ -83,23 +84,19 @@ function resetForm() {
 
 function readFormData() {
     type = document.getElementById("animal-type").value;
-    console.log(type)
     breed = document.getElementById("animal-breed").value;
-    console.log(breed)
     age = document.getElementById("animal-age").value;
-    console.log(age)
     gender = document.getElementById("animal-gender").value;
-    console.log(gender)
 
     compatibilities = [];
     if (document.getElementById("compatibility-dogs").checked) {
-        compatibilities.push("dogs");
+        compatibilities.push("dog");
     }
     if (document.getElementById("compatibility-cats").checked) {
-        compatibilities.push("cats");
+        compatibilities.push("cat");
     }
     if (document.getElementById("compatibility-children").checked) {
-        compatibilities.push("children");
+        compatibilities.push("kids");
     }
     if (document.getElementById("compatibility-none").checked) {
         compatibilities.push("none");
@@ -126,3 +123,47 @@ document.getElementById("compatibility-dogs").addEventListener("click", handleCo
 document.getElementById("compatibility-cats").addEventListener("click", handleCompatibilityCheckboxes);
 document.getElementById("compatibility-children").addEventListener("click", handleCompatibilityCheckboxes);
 document.getElementById("compatibility-none").addEventListener("click", handleCompatibilityCheckboxes);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("find-form");
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+  
+        if (!validate()){
+            return;
+        }
+        
+        let compatibilityStr = "";
+        for (let i = 0; i < compatibilities.length; i++) {
+            compatibilityStr += compatibilities[i];
+            if (i !== compatibilities.length - 1) {
+                compatibilityStr += "-";
+            }
+        }
+
+        const compatibility = compatibilityStr;
+          
+        const formData = {
+          type,
+          breed,
+          age,
+          gender,
+          compatibility,
+        };
+        
+        console.log("Creating Request with "+formData.type);
+        const response = await fetch("/findPets", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify(formData),
+        });
+  
+        const html = await response.text();
+        document.open();
+        document.write(html);
+        document.close();
+      });
+    }
+  });

@@ -1,0 +1,12 @@
+d1:user1:d:golden-retriever:young:m:dog-cat-kids:Loves fetch & belly rubs!
+c1:user2:c:persian:adult:m:cat-kids:Snuggly lap cat & curious explorer!
+d2:user3:d:maltese:newborn:m:dog-cat-kids:Loves long walks and squeaky toys!
+d3:user4:d:belgian Shepherd:adult:m:kids:Loyal companion and couch cuddler.
+c2:user5:c:birman:senior:f:none:Elegant and vocal, loves attention!
+d4:user6:d:schnauzer:adult:m:dog-cat-kids:Smart, alert, and full of charm — ready to protect and play all in one day!
+d5:user7:d:pug:adult:f:dog-kids:Energetic, loves swimming and playing catch!
+c3:user8:c:siamese:adult:m:cat-kids:Gentle giant with a heart of gold.
+d6:user9:d:french-bulldog:young:f:dog-cat:Loves snuggling on the couch and making everyone laugh with her goofy antics!
+d7:user10:d:beagle:young:f:dog-cat:Adventurous spirit with a nose for fun — always up for a walk or sniffing session!
+c4:user11:c:persian:senior:m:cat:Calm, regal, and affectionate — a true lap king who adores quiet company.
+d8:user12:d:australian-shepherd:young:m:dog-cat-kids:Always curious, loves to sniff around!
